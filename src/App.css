@@ -5,3 +5,58 @@
   color: #c9ada7;
   color: #f2e9e4;
 }
+
+/*NAWIGACJA */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+nav h1 {
+  margin-left: 3em;
+}
+
+nav ul {
+display: flex;
+flex-direction: row;
+margin-right: 3em;
+
+
+}
+
+nav li {
+  list-style: none;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+nav a {
+text-decoration: none;
+}
+
+/* WYNIKI WYSZUKIWANIA */
+
+.searchResults {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 4em;
+}
+.resultsPage {
+  display: flex;
+  flex-direction: column;
+ width: 30%;
+  
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 3em;
+  margin: 0;
+}

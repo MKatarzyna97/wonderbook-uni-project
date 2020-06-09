@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const SearchBook = (props) => {
+function SearchBook (props) {
     return ( 
-        <form onSubmit={props.searchBooks}action="">
+        <form onSubmit={props.searchBooks} action="">
             <input onChange={props.handleSearch} type="text" name="" id=""/>
             <button type="submit">Szukaj!</button>
         </form>

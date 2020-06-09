@@ -1,9 +1,10 @@
 import React from 'react';
 
 
-const Results = (props) => {
+function Results (props) {
     return(
         <div className="results">
+            
             <img src={props.image} alt=""/>
             <div className="info">
     <h2>{props.title}</h2>
