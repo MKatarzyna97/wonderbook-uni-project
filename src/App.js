@@ -4,8 +4,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //COMPONENTS
 import Home from "./components/home";
-import Results from "./components/results";
+
 import Navbar from "./components/navbar";
+import Trial from "./components/trial";
+import Books from "./components/books";
 
 function App() {
   return (
@@ -13,8 +15,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
+      <Route path="/trial" component={Trial} />
       <Route path="/" component={Home} />
-      <Route path="/search-results" component={Results} />
+      <Route path="/books" component={Books} />
 
       </Switch>
     </div>
