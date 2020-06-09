@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Books from './books'
+
 
 class Trial extends Component {
     state = {  }

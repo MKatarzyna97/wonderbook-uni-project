@@ -1,8 +1,8 @@
-import React, { Component, Redirect } from 'react';
+import React, { Component } from 'react';
 import SearchBook from "./searchForm";
 import request from 'superagent';
 import Books from "./books";
-import Navbar from "./navbar";
+
 
 
 class Home extends Component {
@@ -44,13 +44,14 @@ request
     { 
 
         let noTitle = ''
-        let search = (<div className="sec-title"> <h2>Poszukujesz {this.state.searchArea}</h2> <hr/></div>)
+        let search = (<div className="secTitle"> <h2>Poszukujesz: <span style={{color: '#4a4e69'}}>{this.state.searchArea}</span> </h2> <hr className="hrLine"/></div>)
 
         return ( 
             <div className="home">
+                <div className="searchPanel">
             <h1>O czym chcesz dziś przeczytać?</h1>
           
-            <SearchBook searchBooks={this.searchBooks} handleSearch={this.handleSearch} />
+            <SearchBook searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> </div>
             {this.state.fireRedirect ? search : noTitle}
             
             <div className='searchResults'>
