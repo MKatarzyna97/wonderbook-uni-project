@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-
-class Trial extends Component {
-    state = {  }
-    render() { 
+const Trial = (props) => {
         return ( <div><h1>Make it work!</h1>
           
            </div>);
-    }
+    
 }
  
 export default Trial;

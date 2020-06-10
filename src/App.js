@@ -8,7 +8,9 @@ import Footer from "./components/footer"
 import Navbar from "./components/navbar";
 import Trial from "./components/trial";
 import Books from "./components/books";
-import Friend from "./components/friend"
+import Friend from "./components/friend";
+import Contact from "./components/contact"
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/books" component={Books} />
       <Route path="/this-month" component={Friend} />
+      <Route path="/contact" component={Contact} />
 
       </Switch>
       <Footer />

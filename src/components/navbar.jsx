@@ -14,7 +14,7 @@ class Navbar extends Component {
 
            <Link className="navElement" to="/search-results"> <li>O nas</li> </Link>
            <Link className="navElement" to='/this-month'> <li>Temat miesiąca</li> </Link>
-          <Link className="navElement" to='Contact'> <li>Kontakt</li> </Link> 
+          <Link className="navElement" to='/contact'> <li>Kontakt</li> </Link> 
           
             </ul>
 

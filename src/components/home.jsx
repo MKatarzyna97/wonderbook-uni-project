@@ -25,7 +25,8 @@ class Home extends Component {
     }
 
 searchBooks = (e) => {
-    e.preventDefault();  
+    e.preventDefault();
+    
 request
     .get("https://www.googleapis.com/books/v1/volumes")
     .query({ q: this.state.searchArea })
@@ -36,9 +37,6 @@ request
        })
     })
 }
-
-
-
 
 //WYSZUKIWARKA - KONIEC
 
@@ -60,8 +58,7 @@ request
             </div>
             
             {this.state.afterSearch ? <SearchAgain searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
-            {this.state.afterSearch ? <FriendSection /> : null }
-            
+             <FriendSection />
             
             </div>
 
