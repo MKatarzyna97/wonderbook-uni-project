@@ -8,7 +8,7 @@ class Navbar extends Component {
         
         <nav className="navbar">
 
-          <Link to='/'>  <h1>WonderBook</h1></Link>
+          <Link to='/'> <h1>WonderBook</h1></Link>
 
             <ul className="navbarStyle">
 

@@ -8,7 +8,7 @@ import Footer from "./components/footer"
 import Navbar from "./components/navbar";
 import Trial from "./components/trial";
 import Books from "./components/books";
-import AfterPage from "./components/afterPage"
+import Friend from "./components/friend"
 
 function App() {
   return (
@@ -17,9 +17,9 @@ function App() {
       <Navbar />
       <Switch>
       <Route path="/trial" component={Trial} />
-      <Route path="/" component={Home} />
+      <Route path="/" exact component={Home} />
       <Route path="/books" component={Books} />
-      <Route path="/results" component={AfterPage} />
+      <Route path="/this-month" component={Friend} />
 
       </Switch>
       <Footer />

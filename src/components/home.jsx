@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import SearchBook from "./searchForm";
 import request from 'superagent';
 import Books from "./books";
+import SearchAgain from "./searchAgain"
+import FriendSection from './friendSection';
 
 
 
@@ -9,7 +11,7 @@ class Home extends Component {
     state = { 
         books: [],
         searchArea: '',
-        fireRedirect: false,
+        afterSearch: false,
      }
 
 
@@ -19,23 +21,24 @@ class Home extends Component {
     handleSearch = (e) => {
         this.setState({
             searchArea: e.target.value,
-            
         })
     }
 
 searchBooks = (e) => {
-    e.preventDefault();
-    this.props.history.push(`/books=${this.state.searchArea}`);
+    e.preventDefault();  
 request
     .get("https://www.googleapis.com/books/v1/volumes")
     .query({ q: this.state.searchArea })
     .then((data) => {
        this.setState({
            books: [...data.body.items],
-           fireRedirect: true,
+           afterSearch: true,
        })
     })
 }
+
+
+
 
 //WYSZUKIWARKA - KONIEC
 
@@ -43,22 +46,23 @@ request
    
     { 
 
-        let noTitle = ''
         let search = (<div className="secTitle"> <h2>Poszukujesz: <span style={{color: '#4a4e69'}}>{this.state.searchArea}</span> </h2> <hr className="hrLine"/></div>)
 
         return ( 
             <div className="home">
-                <div className="searchPanel">
-            <h1>O czym chcesz dziś przeczytać?</h1>
-          
-            <SearchBook searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> </div>
-            {this.state.fireRedirect ? search : noTitle}
+            {this.state.afterSearch ? null :  <SearchBook searchBooks={this.searchBooks} handleSearch={this.handleSearch} />}
+            {this.state.afterSearch ? search : null }
             
-            <div className='searchResults'>
+          <div className='searchResults'>
+
             <Books books={this.state.books} />
 
             </div>
-        
+            
+            {this.state.afterSearch ? <SearchAgain searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
+            {this.state.afterSearch ? <FriendSection /> : null }
+            
+            
             </div>
 
          );

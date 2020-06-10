@@ -1,9 +1,9 @@
 import React from 'react';
 
-function SearchBook (props) {
+function SearchAgain (props) {
     return ( 
-   <div className="searchPanel">
-       <h1>O czym chcesz dziś przeczytać?</h1>
+   <div className="search-again">
+       <h2>Chcesz więcej? Wyszukaj ponownie</h2>
         <form onSubmit={props.searchBooks} action="">
             <input onChange={props.handleSearch} type="text" name="" id=""/>
             <button type="submit">Szukaj!</button>
@@ -13,4 +13,4 @@ function SearchBook (props) {
 }
 
  
-export default SearchBook;
+export default SearchAgain;
