@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-const Results = (props) => {
+function Results (props) {
     return(
         <div className="results">
             <img src={props.image} alt=""/>
