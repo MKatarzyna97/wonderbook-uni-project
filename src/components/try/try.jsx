@@ -1,11 +1,12 @@
 import React from 'react';
-import Results from "./results"
+import TryResults from "./tryResult"
 
-function Books (props) {
+function Try (props) {
     
-    return( props.books.map((book, i) => {
+    return( 
+        props.books.map((book, i) => {
         return( <div className="resultsPage">
-        <Results 
+        <TryResults 
         key={i}    
         image={book.volumeInfo.imageLinks.thumbnail}
         title={book.volumeInfo.title}
@@ -17,4 +18,4 @@ function Books (props) {
     )
 }
 
-export default Books;
+export default Try;
