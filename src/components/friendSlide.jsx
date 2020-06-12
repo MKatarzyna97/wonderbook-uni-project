@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
+import Friends from '../photos/friends.jpg'
 
 class FriendSlide extends Component {
     state = {  }
     render() { 
         return ( <div className="friend-slide">
-            <h2>Dobry człowieku, rozumiem Twój ból</h2>
-            <p>Dobry człowieku rozumiem twój ból <br/>
-             Sam też wypadam z najlepszych swych ról <br/>
-             Sam się obsadzam nie tak jak bym chciał <br/>
-             Ktoś mi tę rolę wymyślił i dał <br/>
-             Ty jesteś księgą tak samo jak ja <br/>
-             Będę cię czytał wieczorem co dnia <br/>
-             Poprzez granice przeniosę twą treść <br/>
-             Zawsze cię będę ze sobą już nieść</p> </div> );
+            <img src={Friends} alt=""/>
+           <div className="friend-slide-elements"> 
+           <h1>Temat miesiąca</h1>
+           <h2>Przyjaźń</h2>
+            <div className="kochanowski">
+            <p> <i>Co bez przyjaciół za żywot? Więzienie, <br/> W którym niesmaczne żadne dobre mienie.</i> </p>
+            <h4>Jan Kochanowski</h4>
+            </div>
+
+            <div className="friend-desciption">
+            <p> Co miesiąc wybieramy hasło, które jest motywem przewodnim wybranych dla Ciebie książek. <br/>
+            W tym miesiącu tematem przewodnim jest bliska naturze człowieka <b>przyjaźń</b>. <br/>
+
+                Celebruj przyjaźń i zobacz nasze propozycje: </p> 
+                
+                <button className="read-more-friend">Dowiedz się więcej</button> </div> </div> </div> );
     }
 }
  

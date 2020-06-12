@@ -6,7 +6,8 @@ class Navbar extends Component {
     render() { 
         return ( 
         
-        <nav className="navbar">
+        <nav>
+        <div className="navbar">
 
           <Link to='/'> <h1>WonderBook</h1></Link>
 
@@ -17,7 +18,7 @@ class Navbar extends Component {
           <Link className="navElement" to='/contact'> <li>Kontakt</li> </Link> 
           
             </ul>
-
+            </div>
         </nav> );
     }
 }

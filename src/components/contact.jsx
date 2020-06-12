@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import request from 'superagent';
 
 class Contact extends Component {
     state = { 
