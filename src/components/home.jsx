@@ -4,6 +4,7 @@ import request from 'superagent';
 import Books from "./books";
 import SearchAgain from "./searchAgain"
 import Friend from './friend';
+import News from "./news"
 
 
 
@@ -66,6 +67,10 @@ request
             {this.state.afterSearch ? <SearchAgain searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
             
             {this.state.afterSearch ? <Friend />: null }
+            {this.state.afterSearch ?<News /> : null }
+            
+            
+         
 
             </div>
 
