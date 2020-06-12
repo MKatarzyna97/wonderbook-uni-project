@@ -3,7 +3,7 @@ import SearchBook from "./searchForm";
 import request from 'superagent';
 import Books from "./books";
 import SearchAgain from "./searchAgain"
-import FriendSection from './friendSection';
+import FriendSlide from './friendSlide';
 
 
 
@@ -12,10 +12,12 @@ class Home extends Component {
         books: [],
         searchArea: '',
         afterSearch: false,
+        
      }
 
+    
 
-// WYSZUKIWARKA - FUNKCJE I FETCHOWANIE
+ // WYSZUKIWARKA - FUNKCJE I FETCHOWANIE
 
 
     handleSearch = (e) => {
@@ -47,10 +49,12 @@ request
         let search = (<div className="secTitle"> <h2>Poszukujesz: <span style={{color: '#4a4e69'}}>{this.state.searchArea}</span> </h2> <hr className="hrLine"/></div>)
 
         return ( 
-            <div className="home">
+            <div style={{ height: this.state.afterSearch ? '' : '100vh'}} className="home">
+
             {this.state.afterSearch ? null :  <SearchBook searchBooks={this.searchBooks} handleSearch={this.handleSearch} />}
             {this.state.afterSearch ? search : null }
             
+
           <div className='searchResults'>
 
             <Books books={this.state.books} />
@@ -58,8 +62,9 @@ request
             </div>
             
             {this.state.afterSearch ? <SearchAgain searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
-             <FriendSection />
             
+            {this.state.afterSearch ? <FriendSlide />: null }
+
             </div>
 
          );
