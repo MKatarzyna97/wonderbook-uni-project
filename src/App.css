@@ -125,6 +125,60 @@ color: white
   font-size: 20px;
 }
 
+
+
+.search-again-elements form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-again-elements input {
+  border-radius: 50px;
+  width: 35em;
+  height: 3em;
+  border-color: transparent;
+  color: #4a4e69;
+  padding-left: 1em;
+}
+
+.search-again-elements button {
+  width: 40%;
+  border-radius: 50px;
+  height: 2em;
+  border-color: transparent;
+  background-color: #4a4e69;
+  color: white;
+  font-size: 20px;
+  margin-left: 0.5em;
+}
+
+.search-again-elements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin-left: 4em;
+  margin-right: 4em;
+ 
+}
+
+.search-again {
+  background-color: #9a8c98;
+  color: white;
+  height: 12em;
+  
+
+
+  
+}
+.search-again-elements h2 {
+ 
+  font-weight: 300;
+  font-size: 35px;
+}
+
 /* WYNIKI WYSZUKIWANIA */
 
 .searchResults {
@@ -133,7 +187,7 @@ color: white
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 4em;
+  margin: 4 4 0 4em;
 }
 
 
@@ -223,32 +277,103 @@ footer {
   
 }
 
-.search-again {
-  background-color: #9a8c98;
-  color: white;
-  height: 12em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-
-  
-}
-.search-again h2 {
- 
-  font-weight: 200;
-}
+/* FRIEND SECTION*/
 
 .friend-slide {
- background-color: teal;
-  color: white;
+ width: 100%;
+ position: relative;
+ 
+  
+
+}
+.friend-slide-elements {
+  color: #22223b;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
+  z-index: 1;
 }
 
+.friend-slide-elements h1 {
+  text-align: center;
+  
+  font-weight: 400;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friend-slide-elements h2 {
+  color: #4a4e69;
+  letter-spacing: 10px;
+  
+}
+
+.kochanowski {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+ 
+}
+
+.kochanowski h4 {
+  margin-top: 0em;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.kochanowski p {
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.friend-desciption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 6.5em;
+  font-weight: 400;
+  margin-top: 3em;
+  font-size: 18px;
+  
+  
+ 
+}
+
+.read-more-friend {
+  width: 20%;
+  border-radius: 50px;
+  height: 2.2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-color: transparent;
+  background-color: #4a4e69;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+ 
+}
+
+.friend-slide img {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
 .read-more {
   width: 100%;
   border-radius: 50px;
@@ -343,6 +468,8 @@ footer li {
 display: flex;
 flex-direction: column;
 justify-content: center;
+margin-top: 0;
+padding-top: 0;
 
 
 }
@@ -355,7 +482,17 @@ justify-content: center;
 }
 .carousel h1 {
   text-align: center;
-  margin-bottom: 0.8em;
+  background-color: #22223b;
+  color: white;
+  font-weight: 400;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 .carousel h2 {
  font-size: 40px;
