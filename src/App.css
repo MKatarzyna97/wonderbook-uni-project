@@ -18,50 +18,65 @@ body {
 }
 
 /*NAWIGACJA */
-
-nav {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  
+ 
+}
+nav {
+  
   background-color: #22223b;
   position: fixed;
   width: 100%;
-  align-items: center;
   height: 10vh;
+  padding: 0;
+  margin: 0;
 }
 
 
-nav h1 {
+.navbar h1 {
   margin-left: 3em;
   color: white;
   font-family: 'Cardo', serif;
   font-family: 700;
   font-size: 27px;
-
+width: 30%;
+margin-bottom: 0;
+margin-top: 0;
 }
 
-nav ul {
+.navbar ul {
 display: flex;
 flex-direction: row;
 margin-right: 3em;
-
+justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 
 }
 
-nav li {
+.navbar li {
   list-style: none;
   padding-left: 2em;
   padding-right: 2em;
   color: white
 }
 
-nav a {
+.navbar a {
 text-decoration: none;
 color: white
 }
 
 .empty-bar {
-  height:12vh;
+  height:20vh;
 }
 
 /* WYSZUKIWANIE */
@@ -234,6 +249,21 @@ footer {
   text-align: justify;
 }
 
+.read-more {
+  width: 100%;
+  border-radius: 50px;
+  height: 2.2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-color: transparent;
+  background-color: #9a8c98;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
 
 
 /* FOOTER */
@@ -241,11 +271,10 @@ footer {
 footer {
   background-color: #22223b;
   color: white;
-
  position: relative;
  display: flex;
  flex-direction: column;
-
+height: 45vh;
 }
 
 footer ul {

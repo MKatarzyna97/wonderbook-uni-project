@@ -3,7 +3,7 @@ import Results from "./results"
 
 function Books (props) {
     
-    return( props.books.map((book, i) => {
+    return( props.books.slice(0,9).map((book, i) => {
         return( 
         <Results 
         key={i}    

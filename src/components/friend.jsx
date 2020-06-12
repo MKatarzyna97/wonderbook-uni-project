@@ -33,8 +33,9 @@ class Friend extends Component {
             <FriendSlide />
             <div className='searchResults'>
         <Books books={this.state.books} />
+        <Link to='this-month'> <button className="read-more">Dowiedz się więcej</button> </Link> 
         </div>
-       <Link to='this-month'> <button className="read-more">Przeczytaj więcej</button> </Link>
+        
         </div>);
     }
 }

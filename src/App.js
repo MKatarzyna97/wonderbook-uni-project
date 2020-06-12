@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //COMPONENTS
 import Home from "./components/home";
-import Footer from "./components/footer"
+import Footer from "./components/footer/footer"
 import Navbar from "./components/navbar";
 import Trial from "./components/trial";
 import Books from "./components/books";
