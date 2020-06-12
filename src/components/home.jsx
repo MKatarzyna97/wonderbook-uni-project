@@ -3,7 +3,7 @@ import SearchBook from "./searchForm";
 import request from 'superagent';
 import Books from "./books";
 import SearchAgain from "./searchAgain"
-import FriendSlide from './friendSlide';
+import Friend from './friend';
 
 
 
@@ -52,6 +52,8 @@ request
             <div style={{ height: this.state.afterSearch ? '' : '100vh'}} className="home">
 
             {this.state.afterSearch ? null :  <SearchBook searchBooks={this.searchBooks} handleSearch={this.handleSearch} />}
+            
+            <div className='empty-bar'> </div>
             {this.state.afterSearch ? search : null }
             
 
@@ -60,10 +62,10 @@ request
             <Books books={this.state.books} />
 
             </div>
-            
+           
             {this.state.afterSearch ? <SearchAgain searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
             
-            {this.state.afterSearch ? <FriendSlide />: null }
+            {this.state.afterSearch ? <Friend />: null }
 
             </div>
 

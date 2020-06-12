@@ -5,14 +5,25 @@ class Footer extends Component {
     render() { 
         return (<footer>
 
-           
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+         <div className="footer-contact-info">  
+         <div className="footer-contact">
+                <p>Kontakt </p> 
             <ul> 
-                <li> Modi, aliquid quo dignissimos unde asperiores neque assumenda,</li> 
-                <li> reprehenderit molestias,  </li>
-        <li>   quia tempora commodi. </li> </ul>
-            
-        <p> Fugit exercitationem beatae sapiente inventore nihil natus error totam.</p> 
+                <li> moj.email@adres.com</li> 
+                <li> 123 123 123  </li>
+        </ul></div>
+
+        <div className="social-media-footer">
+            <p>Znajdź nas w sieci</p>
+        <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            </ul>
+            </div>
+            </div>
+        <p className='end-line'>Strona przygotowana w ramach projektu zaliczeniowego.</p> 
+        
 
             </footer>);
     }

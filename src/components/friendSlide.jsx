@@ -4,15 +4,14 @@ class FriendSlide extends Component {
     state = {  }
     render() { 
         return ( <div className="friend-slide">
-            <h2>Dobry człowieku, rozumiem Twój ból</h2>
-            <p>Dobry człowieku rozumiem twój ból <br/>
-             Sam też wypadam z najlepszych swych ról <br/>
-             Sam się obsadzam nie tak jak bym chciał <br/>
-             Ktoś mi tę rolę wymyślił i dał <br/>
-             Ty jesteś księgą tak samo jak ja <br/>
-             Będę cię czytał wieczorem co dnia <br/>
-             Poprzez granice przeniosę twą treść <br/>
-             Zawsze cię będę ze sobą już nieść</p> </div> );
+            <h2>Przyjaźń</h2>
+            <div className="kochanowski">
+            <p> <i>Co bez przyjaciół za żywot? Więzienie, <br/> W którym niesmaczne żadne dobre mienie.</i> </p>
+            <p>Jan Kochanowski</p>
+            </div>
+            <p> Co miesiąc wybieramy hasło, które jest motywem przewodnim wybranych dla Ciebie książek. <br/>
+
+                Celebruj przyjaźń i zobacz nasze propozycje: </p> </div> );
     }
 }
  
