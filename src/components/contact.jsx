@@ -1,31 +1,36 @@
 import React, { Component } from 'react';
 
-class Contact extends Component {
-    state = {  }
+import request from 'superagent';
 
-    componentDidMount() {
-        fetch('https://programming-quotes-api.herokuapp.com/quotes/lang/en')
-        .then(response => response.json())
-        .then(json => {
-          this.setState({
-            books: json,
-          })
+class Contact extends Component {
+    state = { 
+      searchArea: 'friend'
+     }
+
+     componentDidMount() {
+      fetch('https://www.googleapis.com/books/v1/volumes?q=friend')
+      .then(response => response.json())
+      .then(json => {
+        this.setState({
+          books: json, 
         })
-       }
-  
-       constructor(props) {
-          super(props);
-          this.state = {
-            books: []
-          }
+      })
+     }
+
+     constructor(props) {
+        super(props);
+        this.state = {
+          books: []
         }
+      }
     
     render() { 
-        let {books} = this.state;
+        
+
         return ( <div>
 
-{books.map(item => (<div> {item.en} </div>))}
-
+        {this.state.books.map(item => (<div>{item.volumeInfo.title}</div>))}
+        
         </div>);
     }
 }

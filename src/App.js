@@ -9,7 +9,7 @@ import Navbar from "./components/navbar";
 import Trial from "./components/trial";
 import Books from "./components/books";
 import Friend from "./components/friend";
-import Contact from "./components/contact"
+import Contact from "./components/contact";
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
       <Route path="/books" component={Books} />
       <Route path="/this-month" component={Friend} />
       <Route path="/contact" component={Contact} />
+
 
       </Switch>
       <Footer />
