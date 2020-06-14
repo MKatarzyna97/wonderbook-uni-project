@@ -1,11 +1,11 @@
 import React from 'react';
-import Results from "./results"
+import ShowDetails from "./showDetails"
 
-function Books (props) {
+function DetailsMap (props) {
     
     return( props.books.slice(0,9).map((book, i) => {
         return( 
-        <Results 
+        <ShowDetails 
         key={i}    
         image={book.volumeInfo.imageLinks.thumbnail}
         title={book.volumeInfo.title}
@@ -18,4 +18,4 @@ function Books (props) {
     )
 }
 
-export default Books;
+export default DetailsMap;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Friends from '../photos/friends.jpg'
+import Friends from '../photos/friends.jpg';
+import {Link} from 'react-router-dom'
 
 class FriendSlide extends Component {
     state = {  }
@@ -20,7 +21,7 @@ class FriendSlide extends Component {
 
                 Celebruj przyjaźń i zobacz nasze propozycje: </p> 
                 
-                <button className="read-more-friend">Dowiedz się więcej</button> </div> </div> </div> );
+             <Link to="this-month"> <button className="read-more-friend">Dowiedz się więcej</button> </Link> </div> </div> </div> );
     }
 }
  
