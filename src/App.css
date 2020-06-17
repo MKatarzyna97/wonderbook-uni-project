@@ -130,9 +130,10 @@ color: white
 
 .search-again-elements form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2em;
 }
 
 .search-again-elements input {
@@ -153,31 +154,34 @@ color: white
   color: white;
   font-size: 20px;
   margin-left: 0.5em;
+  margin-top: 1.5em;
 }
 
 .search-again-elements {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100%;
   margin-left: 4em;
   margin-right: 4em;
+  
+  
  
 }
 
 .search-again {
-  background-color: #9a8c98;
+  background-image: url("./photos/blurred.jpg");
   color: white;
-  height: 12em;
-  
-
-
+  height: 50vh;
   
 }
 .search-again-elements h2 {
  
-  font-weight: 300;
+  font-weight: 400;
   font-size: 35px;
+  line-height: 50px;
+  text-align: center;
 }
 
 /* WYNIKI WYSZUKIWANIA */
@@ -217,6 +221,13 @@ color: white
 .results img {
   width: 160px;
   height: 240px;
+  
+}
+
+.results img:hover {
+  width: 210px;
+  height: 290px;
+ 
 }
 
 .info {
@@ -554,3 +565,79 @@ background: radial-gradient(circle, rgba(161,122,209,1) 0%, rgba(42,69,215,1) 10
 .active .opening {
   display: block
 }
+
+/*DETAILS*/
+
+.details-title-author {
+color: #4a4e69;
+}
+.imgButton {
+ 
+  background-color: transparent;
+  border-style: none;
+}
+
+.detailsAuthor {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.detail-content {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+color: #22223b;
+}
+
+.detail-content img {
+height: 70vh;
+}
+
+.detail-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  text-align: justify;
+
+  }
+
+  .read-now-button {
+    
+  border-radius: 50px;
+  height: 2.2em;
+  
+  border-color: transparent;
+  background-color: #4a4e69;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+
+  }
+
+  .read-now-button:hover {
+background-color: #9a8c98 ;
+color: white;
+  }
+
+  .close-button {
+    border-radius: 50px;
+  height: 2.2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-color: transparent;
+  background-color: #9a8c98;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  }
+
+  .close-button:hover {
+    background-color:#4a4e69;
+  }

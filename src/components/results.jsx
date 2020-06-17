@@ -1,6 +1,6 @@
 import React from 'react';
 import MyVerticallyCenteredModal from "./Modal/modal";
-import Button from 'react-bootstrap/Button'
+
 
 
 function Results (props) {
@@ -9,9 +9,9 @@ function Results (props) {
 
     return(
         <div className="results">
-         <Button variant="primary" onClick={() => setModalShow(true)}>   
-          <img src={props.image} alt=""/> 
-          </Button>
+        <button className="imgButton" onClick={() => setModalShow(true)}>   
+          <img src={props.image} alt=""/> </button>
+     
             <div className="info">
     <h2>{props.title}</h2>
     <h3>{props.author}</h3>
@@ -25,6 +25,7 @@ function Results (props) {
         category={props.category}
         image={props.image}
         show={modalShow}
+        previewLink={props.previewLink}
         onHide={() => setModalShow(false)}
       />
             </div>
