@@ -12,6 +12,7 @@ function Books (props) {
         author={book.volumeInfo.authors}
         category={book.volumeInfo.categories}
         description={book.volumeInfo.description}
+        previewLink={book.volumeInfo.previewLink}
         /> )
     })
 

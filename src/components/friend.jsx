@@ -31,7 +31,9 @@ class Friend extends Component {
         return ( <div>
 
             <FriendSlide />
+            <h2 className="friend-title">O przyjacielu</h2>
             <div className='searchResults'>
+              
         <Books books={this.state.books} />
         <Link to='this-month'> <button className="read-more">Dowiedz się więcej</button> </Link> 
         </div>

@@ -9,7 +9,7 @@ import Footer from "./components/footer/footer"
 import Navbar from "./components/navbar";
 import Trial from "./components/trial";
 import Books from "./components/books";
-import ThisMonth from "./components/thisMonth";
+import ThisMonth from "./components/This-month/thisMonth"
 import Contact from "./components/contact";
 
 
