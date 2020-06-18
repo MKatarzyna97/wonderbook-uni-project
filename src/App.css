@@ -709,3 +709,73 @@ margin-right: 2em;
    margin-top: 2em;
  
  }
+
+ /*------------------------------THIS MONTH-------------------------------*/
+
+ /*INTRO*/
+
+.this-month-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+  margin-bottom: 3em;
+  
+}
+.this-month-intro img {
+width: 40%;
+}
+
+.this-month-intro-descr {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+margin: 0 4em 0 4em;
+text-align: justify;
+}
+.this-month-intro h2 {
+  margin-bottom: 1em;
+}
+
+/*QUOTE*/
+
+.quote {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+  margin-bottom: 3em;
+  
+}
+.quote img {
+width: 40%;
+}
+
+.quote-content{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+margin: 0 4em 0 4em;
+text-align: justify;
+}
+
+/*SONG*/
+
+.song {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2e9e4;
+}
+
+.friend-books {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
