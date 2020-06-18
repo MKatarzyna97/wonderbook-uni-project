@@ -4,7 +4,8 @@ import request from 'superagent';
 import Books from "./books";
 import SearchAgain from "./searchAgain"
 import Friend from './friend';
-import News from "./news"
+import News from "./news";
+import Header from "./header"
 
 
 
@@ -37,24 +38,29 @@ request
        this.setState({
            books: [...data.body.items],
            afterSearch: true,
+           
        })
     })
 }
+
 
 //WYSZUKIWARKA - KONIEC
 
     render()
    
     { 
-
-        let search = (<div className="secTitle"> <h2>Poszukujesz: <span style={{color: '#4a4e69'}}>{this.state.searchArea}</span> </h2> <hr className="hrLine"/></div>)
+      
+        let search = (<div className="secTitle"> <h2>Poszukujesz: <span style={{color: '#4a4e69'}, {letterSpacing: '8px'}}>{this.state.searchArea}</span> </h2> <hr className="hrLine"/></div>)
 
         return ( 
             <div style={{ height: this.state.afterSearch ? '' : '100vh'}} className="home">
 
+
+
             {this.state.afterSearch ? null :  <SearchBook searchBooks={this.searchBooks} handleSearch={this.handleSearch} />}
             
-            <div className='empty-bar'> </div>
+            
+            {this.state.afterSearch ? <Header /> : null }
             {this.state.afterSearch ? search : null }
             
 

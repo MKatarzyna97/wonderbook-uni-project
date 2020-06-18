@@ -17,6 +17,40 @@ body {
 
 }
 
+/*HEADER */
+
+.header {
+  background-image: url("./photos/book.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.header h1 {
+  font-family: 'Cardo', serif;
+  font-size: 70px;
+  letter-spacing: 5px;
+}
+
+.header h2 {
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.hr-header {
+  background-color: white;
+  width: 30%;
+  height: 1px;
+  border-radius: 100%;
+}
+
 /*NAWIGACJA */
 .navbar {
   display: flex;
@@ -89,15 +123,35 @@ color: white
   align-items: center;
   height: 100vh;
   color: white;
-  background-image: url("main-bg.jpg");
-  background-size: cover;
   
+  background-size: cover;
+  z-index: 1;
 }
 
+.search-page img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -2;
+
+}
+
+.search-bg {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  background-color: #22223b;
+  opacity: 0.7;
+}
+
+
 .searchPanel h1 {
-  font-weight: 400;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 50px;
   margin-bottom: 1em;
+  
+  
 }
 .searchPanel form {
   display: flex;
@@ -119,7 +173,7 @@ color: white
   width: 30%;
   border-radius: 50px;
   height: 2.5em;
-  margin-top: 3em;
+  margin-top: 2em;
   border-color: transparent;
   background-color: #4a4e69;
   color: white;
@@ -192,7 +246,9 @@ color: white
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 4 4 0 4em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  
 }
 
 
@@ -201,6 +257,7 @@ color: white
   display: flex;
   flex-direction: column;
  width: 30%;
+ 
 
   
 }
@@ -211,7 +268,8 @@ color: white
   justify-content: center;
   align-items: center;
   width: 30%;
-  padding: 2em 1em 2em 1em;
+  
+  
   
   
 }
@@ -278,13 +336,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3em;
   
 }
 
 .secTitle h2 {
   margin-bottom: 0;
   color: #22223b;
-  letter-spacing: 8px;
+  
 }
 
 .hrLine {
@@ -538,11 +597,12 @@ color: white;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 5em;
+    
   }
 
   .friend-slide img {
 width: 55%;
-opacity: 0.9;
+
 
   }
 
@@ -572,6 +632,7 @@ margin-right: 2em;
    color: white;
    letter-spacing: 10px;
    text-align: start;
+   font-family: 'Cardo', serif;
    
  }
  
@@ -605,9 +666,9 @@ margin-right: 2em;
    width: 100%;
    text-align: justify;
    font-weight: 400;
-   margin-top: 3em;
+   margin-top: 1em;
    font-size: 18px;
-   line-height: 40px;
+   line-height: 30px;
    
   
  }
@@ -616,8 +677,8 @@ margin-right: 2em;
    width: 100%;
    border-radius: 50px;
    height: 2.2em;
-   margin-top: 3em;
-   margin-bottom: 3em;
+   margin-top: 2em;
+   margin-bottom: 2em;
    border-color: transparent;
    background-color: #4a4e69;
    color: white;
@@ -632,8 +693,8 @@ margin-right: 2em;
    width: 15em;
    border-radius: 50px;
    height: 2.2em;
-   margin-top: 3em;
-   margin-bottom: 3em;
+   
+   
    border-color: transparent;
    background-color: #9a8c98;
    color: white;
@@ -646,5 +707,5 @@ margin-right: 2em;
  .friend-title {
    text-align: center;
    margin-top: 2em;
-   margin-bottom: 2em;
+ 
  }

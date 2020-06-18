@@ -16,10 +16,10 @@ class FriendSlide extends Component {
             </div>
 
             <div className="friend-desciption">
-            <p> Co miesiąc wybieramy hasło, które jest motywem przewodnim wybranych dla Ciebie książek. <br/>
-            W tym miesiącu tematem przewodnim jest bliska naturze człowieka <b>przyjaźń</b>. 
-<br/>
-                Celebruj przyjaźń i zobacz nasze propozycje: </p> 
+            <p> Co miesiąc wybieramy hasło, które jest motywem przewodnim wybranych dla Ciebie książek.
+            W tym miesiącu tematem przewodnim jest bliska naturze człowieka <b>przyjaźń</b>.  <br/>
+
+                Celebruj przyjaźń i zobacz nasze propozycje </p> 
                 
              <Link to="this-month"> <button className="read-more-friend">Dowiedz się więcej</button> </Link> </div> </div>
              <img src={Friends} alt=""/> </div> );
