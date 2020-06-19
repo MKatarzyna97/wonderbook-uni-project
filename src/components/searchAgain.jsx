@@ -8,7 +8,7 @@ function SearchAgain (props) {
        <h2>Chcesz więcej? <br/> Wyszukaj ponownie</h2>
         <form onSubmit={props.searchBooks} action="">
             <input onChange={props.handleSearch} type="text" name="" id=""/>
-            <button type="submit">Szukaj!</button>
+            <button type="submit" onClick={props.scrollToTop}>Szukaj!</button>
         </form>
         </div>
         </div>

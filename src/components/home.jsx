@@ -6,8 +6,7 @@ import SearchAgain from "./searchAgain"
 import Friend from './friend';
 import News from "./news";
 import Header from "./header";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+
 
 
 
@@ -19,7 +18,12 @@ class Home extends Component {
         
      }
 
-    
+     scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
 
  // WYSZUKIWARKA - FUNKCJE I FETCHOWANIE
 
@@ -62,7 +66,7 @@ request
             {this.state.afterSearch ? null :  <SearchBook searchBooks={this.searchBooks} handleSearch={this.handleSearch} />}
             
             
-            {this.state.afterSearch ? <Header /> : null }
+            {this.state.afterSearch ? <Header searchBooks={this.searchBooks}/> : null }
             {this.state.afterSearch ? search : null }
             
 
@@ -72,9 +76,9 @@ request
             <Books books={this.state.books} afterSearch={this.state.afterSearch}/>
             </div>
            
-            {this.state.afterSearch ? <SearchAgain scrollToTop={this.ScrollToTop} searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
+            {this.state.afterSearch ? <SearchAgain scrollToTop={this.scrollToTop} searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
             
-            {this.state.afterSearch ? <Friend />: null }
+            {this.state.afterSearch ? <Friend scrollToTop={this.scrollToTop} />: null }
             {this.state.afterSearch ?<News /> : null }
             
             
