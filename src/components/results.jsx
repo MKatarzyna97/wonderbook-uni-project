@@ -1,5 +1,6 @@
 import React from 'react';
 import MyVerticallyCenteredModal from "./Modal/modal";
+import Grow from '@material-ui/core/Grow';
 
 
 
@@ -8,7 +9,9 @@ function Results (props) {
     const [modalShow, setModalShow] = React.useState(false);
 
     return(
+     
         <div className="results">
+         
         <button className="imgButton" onClick={() => setModalShow(true)}>   
           <img src={props.image} alt=""/> </button>
      
@@ -29,7 +32,9 @@ function Results (props) {
         onHide={() => setModalShow(false)}
       />
             </div>
+           
         </div>
+       
     )
 }
 

@@ -3,6 +3,7 @@ import React from 'react';
 function SearchAgain (props) {
     return ( 
    <div className="search-again">
+       
        <div className="search-again-elements">
        <h2>Chcesz więcej? <br/> Wyszukaj ponownie</h2>
         <form onSubmit={props.searchBooks} action="">

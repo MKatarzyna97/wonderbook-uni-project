@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import FriendIntro from './friendIntro'
 import Books from "../books";
-import Song from "./song"
+import Song from "./song";
+import Kochanowski from './kochanowski';
+
+
 
 
 class ThisMonth extends Component {
@@ -25,12 +28,14 @@ class ThisMonth extends Component {
     render() { 
         return ( <div className="this-month">
 <FriendIntro />
+<Kochanowski />
 <div className='friend-books'>
 <h2>Przyjaźń w literaturze</h2>
 <div className="searchResults">
 <Books books={this.state.books} />
 </div>
 </div>
+
 <Song />
         </div> );
     }

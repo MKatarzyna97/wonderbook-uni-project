@@ -59,7 +59,7 @@ body {
   align-items: center;
   padding: 0;
   margin-bottom: 0;
-  margin-top: 0.5em;
+  
   
   
  
@@ -69,7 +69,7 @@ nav {
   background-color: #22223b;
   position: fixed;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   padding: 0;
   margin: 0;
 }
@@ -147,10 +147,12 @@ color: white
 
 
 .searchPanel h1 {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 50px;
   margin-bottom: 1em;
-  
+  letter-spacing: 3px;
+
+   
   
 }
 .searchPanel form {
@@ -225,9 +227,9 @@ color: white
 }
 
 .search-again {
-  background-image: url("./photos/blurred.jpg");
+  background-image: url("./photos/color.png");
   color: white;
-  height: 50vh;
+  height: 60vh;
   
 }
 .search-again-elements h2 {
@@ -272,6 +274,7 @@ color: white
   
   
   
+  
 }
 
 /* UKŁAD WEWNĄTRZ KART*/
@@ -279,6 +282,7 @@ color: white
 .results img {
   width: 160px;
   height: 240px;
+  border-radius: 3%;
   
 }
 
@@ -450,7 +454,7 @@ padding-top: 0;
   height: 2em;
   margin: 0;
   padding: 0;
-  font-size: 40px;
+  font-size: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -592,11 +596,12 @@ color: white;
   /*FRIEND SECTION */
 
   .friend-slide {
-    background-color: #22223b;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 5em;
+    margin-top: 5em;
     
   }
 
@@ -611,9 +616,9 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
-color: white;
+color: #22223b;
 margin-top: 2em;
-margin-right: 2em;
+margin-right: 3em;
   }
 .friend-slide-elements h1 {
   font-weight: 500;
@@ -629,7 +634,7 @@ margin-right: 2em;
  
  
  .friend-slide-elements h2 {
-   color: white;
+   color: #22223b;
    letter-spacing: 10px;
    text-align: start;
    font-family: 'Cardo', serif;
@@ -668,7 +673,7 @@ margin-right: 2em;
    font-weight: 400;
    margin-top: 1em;
    font-size: 18px;
-   line-height: 30px;
+   line-height: 35px;
    
   
  }
@@ -703,6 +708,8 @@ margin-right: 2em;
    font-family: 'Open Sans', sans-serif;
    
  }
+
+ 
  
  .friend-title {
    text-align: center;
@@ -725,6 +732,8 @@ margin-right: 2em;
 }
 .this-month-intro img {
 width: 40%;
+
+
 }
 
 .this-month-intro-descr {
@@ -732,19 +741,31 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: flex-start;
-margin: 0 4em 0 4em;
 text-align: justify;
+margin-left: 5em;
+margin-right: 5em;
 }
 .this-month-intro h2 {
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
 }
 
+.friend-word {
+  
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #4a4e69;
+  margin-top: 0.3em;
+  font-size: 40px;
+}
 /*QUOTE*/
 
 .quote {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 3em;
   margin-bottom: 3em;
@@ -755,22 +776,31 @@ width: 40%;
 }
 
 .quote-content{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
+
 margin: 0 4em 0 4em;
 text-align: justify;
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+
+
 }
 
-/*SONG*/
+.quote-mark{
+  font-size: 60px;
+  font-family: 'Cardo', serif;
+}
 
-.song {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2e9e4;
+.quote p{
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Cardo', serif;
+}
+
+.quote h4 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Cardo', serif;
 }
 
 .friend-books {
@@ -778,4 +808,66 @@ text-align: justify;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+/*SONG*/
+
+.song {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f2e9e4;
+  
+}
+
+.song-lyrics {
+  margin: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30%;
+  
+  
+}
+
+.song-lyrics h3 {
+font-weight: 400;
+font-size: 20px;
+font-family: 'Cardo', serif;
+}
+
+
+.song-lyrics h2 {
+  font-family: 'Cardo', serif;
+  margin-bottom: 1em;
+}
+
+.song-lyrics p {
+  line-height: 32px;
+}
+
+.video {
+  width: 70%;
+ 
+  
+}
+
+.video-view {
+  width: 100%;
+  height: 80vh;
+}
+
+.song button {
+  background-color: transparent;
+  border-style: none;
+}
+
+.expand-icon {
+  color: #22223b;
+  
+}
+
+.expand-icon:hover {
+  cursor: pointer;
 }
