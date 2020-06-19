@@ -13,6 +13,7 @@ function Books (props) {
         category={book.volumeInfo.categories}
         description={book.volumeInfo.description}
         previewLink={book.volumeInfo.previewLink}
+        afterSearch={props.afterSearch}
         /> )
     })
 

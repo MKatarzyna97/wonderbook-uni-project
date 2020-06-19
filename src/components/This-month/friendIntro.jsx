@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import FriendPic from "../../photos/friends.jpg";
+import Group from "../../photos/group.png";
+
 
 class FriendIntro extends Component {
     state = {  }
     render() { 
         return (<div>
             <div className='this-month-intro'>
-    <img src={FriendPic} alt=""/>
+    <img src={Group} alt=""/>
     <div className='this-month-intro-descr'>
-    <h2>Temat miesiąca: przyjaźń </h2>
-    <p>Każdego miesiąca wybieramy temat przewodni. Tym razem porozmawiamy o przyjaźni Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej!
+    <h2>Temat miesiąca <span className="friend-word"> przyjaźń </span> </h2>
+    <p>Każdego miesiąca wybieramy temat przewodni. Tym razem porozmawiamy o przyjaźni Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. 
+       <br/> <br/> Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. 
+    <br/>    <br/> Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej. Lorem ipsum i tak dalej! Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+     
+     
     </p></div>
 </div>
-<div className='quote'>
-    
-    <div className='quote-content'>
-<p> <i>Co bez przyjaciół za żywot? Więzienie, <br/> W którym niesmaczne żadne dobre mienie.</i> </p>
-     <h4>Jan Kochanowski</h4> </div>
-     
-     <img src={FriendPic} alt=""/>
-</div>
+
 </div>
           );
     }

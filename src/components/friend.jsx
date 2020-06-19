@@ -31,7 +31,7 @@ class Friend extends Component {
         return ( <div>
 
             <FriendSlide />
-            <h2 className="friend-title">O przyjacielu</h2>
+            <h2 className="friend-title">Słowo o przyjacielu</h2>
             <div className='searchResults'>
               
         <Books books={this.state.books} />

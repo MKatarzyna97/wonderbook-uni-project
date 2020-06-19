@@ -5,7 +5,9 @@ import Books from "./books";
 import SearchAgain from "./searchAgain"
 import Friend from './friend';
 import News from "./news";
-import Header from "./header"
+import Header from "./header";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 
 
@@ -50,7 +52,7 @@ request
    
     { 
       
-        let search = (<div className="secTitle"> <h2>Poszukujesz: <span style={{color: '#4a4e69'}, {letterSpacing: '8px'}}>{this.state.searchArea}</span> </h2> <hr className="hrLine"/></div>)
+        let search = (<div className="secTitle"> <h2> <span style={{color: '#4a4e69'}, {letterSpacing: '8px'}}>{this.state.searchArea}</span> </h2> <hr className="hrLine"/></div>)
 
         return ( 
             <div style={{ height: this.state.afterSearch ? '' : '100vh'}} className="home">
@@ -65,12 +67,12 @@ request
             
 
           <div className='searchResults'>
-
-            <Books books={this.state.books} />
-
+              
+            
+            <Books books={this.state.books} afterSearch={this.state.afterSearch}/>
             </div>
            
-            {this.state.afterSearch ? <SearchAgain searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
+            {this.state.afterSearch ? <SearchAgain scrollToTop={this.ScrollToTop} searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
             
             {this.state.afterSearch ? <Friend />: null }
             {this.state.afterSearch ?<News /> : null }
