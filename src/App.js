@@ -11,12 +11,14 @@ import Trial from "./components/trial";
 import Books from "./components/books";
 import ThisMonth from "./components/This-month/thisMonth"
 import Contact from "./components/contact";
+import ScrollToTop from "./components/scroll";
 
 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop>
     <div className="App">
       <Navbar />
       <Switch>
@@ -29,6 +31,7 @@ function App() {
       </Switch>
       <Footer />
     </div>
+    </ScrollToTop>
     </Router>
     );
 }
