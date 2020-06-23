@@ -63,7 +63,7 @@ request
 
 
 
-            {this.state.afterSearch ? null :  <SearchBook searchBooks={this.searchBooks} handleSearch={this.handleSearch} />}
+            {this.state.afterSearch ? null :  <SearchBook searchArea={this.state.searchArea} searchBooks={this.searchBooks} handleSearch={this.handleSearch} />}
             
             
             {this.state.afterSearch ? <Header searchBooks={this.searchBooks}/> : null }
@@ -76,7 +76,7 @@ request
             <Books books={this.state.books} afterSearch={this.state.afterSearch}/>
             </div>
            
-            {this.state.afterSearch ? <SearchAgain scrollToTop={this.scrollToTop} searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
+            {this.state.afterSearch ? <SearchAgain searchArea={this.state.searchArea} scrollToTop={this.scrollToTop} searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }
             
             {this.state.afterSearch ? <Friend scrollToTop={this.scrollToTop} />: null }
             {this.state.afterSearch ?<News /> : null }

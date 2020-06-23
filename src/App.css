@@ -169,6 +169,7 @@ color: white
   border-color: transparent;
   color: #4a4e69;
   padding-left: 1em;
+  outline: none;
 }
 
 .searchPanel button {
@@ -180,9 +181,30 @@ color: white
   background-color: #4a4e69;
   color: white;
   font-size: 20px;
+  
 }
 
+.searchPanel button:disabled {
+  outline:0;
+  background-color: #9797978e;
+  color: rgba(255, 255, 255, 0.61);
+}
 
+.searchPanel button:disabled:hover {
+  outline:0;
+  background-color: #9797978e;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.searchPanel button:focus {
+  outline:0;
+  background-color: #22223b
+}
+
+.searchPanel button:hover {
+  background-color: #9a8c98 ;
+  color: white;
+    }
 
 .search-again-elements form {
   display: flex;
@@ -199,7 +221,13 @@ color: white
   border-color: transparent;
   color: #4a4e69;
   padding-left: 1em;
+  outline: none;
 }
+
+.search-again-elements input:focus  {
+  outline: none;
+
+  }
 
 .search-again-elements button {
   width: 40%;
@@ -212,6 +240,16 @@ color: white
   margin-left: 0.5em;
   margin-top: 1.5em;
 }
+
+.search-again-elements button:focus  {
+  outline: none;
+  background-color: #22223b;
+  }
+
+  .search-again-elements button:hover {
+    background-color: #9a8c98 ;
+    color: white;
+      }
 
 .search-again-elements {
   display: flex;
@@ -365,15 +403,18 @@ footer {
  position: relative;
  display: flex;
  flex-direction: column;
-height: 45vh;
+height: 40vh;
 }
-
+footer p {
+  font-size: 20px;
+}
 footer ul {
   display: flex;
 }
 
 footer li {
   list-style: none;
+  padding-bottom: 1em;
   
 }
 .footer-contact-info {
@@ -508,7 +549,15 @@ background: radial-gradient(circle, rgba(161,122,209,1) 0%, rgba(42,69,215,1) 10
   font-family: 'Open Sans', sans-serif;
   
 }
+.button-more:focus {
+outline: none;
+background-color: #22223b;
+}
 
+.button-more:hover {
+  background-color: #22223b ;
+  color: white;
+    }
 .movie .opening {
   display: none;
 }
@@ -527,7 +576,10 @@ color: #4a4e69;
   background-color: transparent;
   border-style: none;
 }
-
+.imgButton:focus  {
+  outline: none;
+ 
+  }
 .detailsAuthor {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -570,9 +622,12 @@ height: 70vh;
   font-family: 'Open Sans', sans-serif;
 
   }
-
+.read-now-button:focus  {
+  outline: none;
+  background-color: #22223b;
+  }
   .read-now-button:hover {
-background-color: #9a8c98 ;
+background-color: #22223b;
 color: white;
   }
 
@@ -588,7 +643,10 @@ color: white;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   }
-
+.close-button:focus  {
+  outline: none;
+  background-color: #22223b;
+  }
   .close-button:hover {
     background-color:#4a4e69;
   }
@@ -692,14 +750,19 @@ margin-right: 3em;
    font-family: 'Open Sans', sans-serif;
   
  }
- 
+ .read-more-friend:hover {
+  background-color: #9a8c98 ;
+  color: white;
+    }
+
+  .read-more-friend:focus {
+    outline: none;
+  }  
  
  .read-more {
    width: 15em;
    border-radius: 50px;
    height: 2.2em;
-   
-   
    border-color: transparent;
    background-color: #9a8c98;
    color: white;
@@ -709,7 +772,14 @@ margin-right: 3em;
    
  }
 
- 
+ .read-more:hover {
+  background-color: #22223b ;
+  color: white;
+    }
+
+  .read-more:focus {
+    outline: none;
+  }  
  
  .friend-title {
    text-align: center;
@@ -863,6 +933,14 @@ font-family: 'Cardo', serif;
   border-style: none;
 }
 
+.song button:focus  {
+  outline: none;
+  background-color: #22223b;
+  }
+.song button:hover {
+  background-color: #9a8c98 ;
+  color: white;
+    }
 .expand-icon {
   color: #22223b;
   
@@ -871,3 +949,63 @@ font-family: 'Cardo', serif;
 .expand-icon:hover {
   cursor: pointer;
 }
+
+/*-------CONTACT---------------*/
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.contact img {
+  width: 50%;
+  
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact-welcome {
+  margin-right: 3em;
+  margin-left: 3em;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contact h1 {
+  font-size: 60px;
+  color: #4a4e69;
+  margin-bottom: 0.5em;
+  
+}
+
+.contact p {
+  color: #4a4e69;
+  font-size: 25px;
+}
+
+.contact-icons {
+ margin-top: 3em;
+}
+
+
+
+.contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contact ul li {
+  list-style: none;
+  padding-right: 1em;
+}
+
