@@ -1,0 +1,229 @@
+.colours {
+  color: #22223b;
+  color: #4a4e69;
+  color: #9a8c98;
+  color: #c9ada7;
+  color: #f2e9e4;
+  font-family: 'Source Serif Pro', serif;
+  font-family: 'Open Sans', sans-serif;
+}
+  
+@media only screen and (max-width: 900px) {
+  .friend-slide-elements h1 {
+    margin-bottom: 1em;
+      }
+
+      .button-more {
+        width: 40%;
+        margin-top: 1em;
+      }
+}
+
+  @media only screen and (max-width: 720px) {
+    
+    html{
+      width: 100vw;
+      overflow-x: hidden;
+    }
+ /*-----------------SEARCH PANEL-------------------*/   
+/*HIDDEN*/
+
+body nav {
+  display: none;
+}
+  
+
+    .navbar {
+      display: none;
+    }
+
+/*NEW*/
+
+
+    .media-nav {
+      display: flex;
+      z-index: 4;
+      position: fixed;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      background-color: #22223b;
+      flex-wrap: wrap;
+    
+    }
+
+    .media-nav h1 {
+     
+      color: white;
+      font-family: 'Cardo', serif;
+      font-family: 700;
+      font-size: 27px;
+    width: 30%;
+    margin: 0;
+    }
+
+    .navElement {
+      color: #22223b;
+      
+    }
+  
+  /*---------FRIEND SECTION-----------*/
+  
+  
+  
+  
+  
+   /*---------CAROUSEL-----------*/
+   .carousel h2 {
+     font-size: 30px;
+   }
+  
+  }
+
+    @media only screen and (max-width: 600px) {
+
+
+.searchPanel input {
+  width: 20em;
+  margin-top: 2em;
+}
+.searchPanel button {
+  width: 50%;
+  height: 2em;
+  margin-top: 3em;
+}
+/*---------RESULTS-----------*/
+
+.results {
+  width: 50%;
+}
+
+
+
+
+
+/*---------SEARCH AGAIN-----------*/
+
+.search-again-elements input {
+  width: 20em;
+}
+
+.search-again-elements h2 {
+  font-size: 40px;
+}
+
+body footer {
+  height: 45vh;
+ 
+
+}
+
+.footer-contact-info {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+
+  /*---------FRIEND SECTION-----------*/
+.friend-slide {
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+  .friend-slide-elements h1 {
+  margin-bottom: 0;
+}
+
+.friend-slide-elements {
+  background-color: rgba(255, 255, 255, 0.438);
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.friend-slide-elements p {
+  text-align: center;
+  justify-content: center;
+}
+
+.friend-description {
+  align-items: center;
+}
+
+.friend-slide img {
+  position: absolute;
+z-index: -1;
+height: 100vh;
+width: 80%;
+opacity: 0.5;
+}
+
+
+
+/*---------CAROUSEL-----------*/
+.first {
+  height: 100vh;
+}
+
+.second {
+  height: 100vh;
+}
+
+.third {
+  height: 100vh;
+}
+    }
+
+
+
+
+
+  
+
+  @media only screen and (max-width: 450px) {
+    .searchPanel h1 {
+      font-size: 30px;
+    }
+
+    .searchPanel input {
+      width: 15em;
+      height: 2.5em;
+    }
+
+    .searchPanel button {
+      width: 50%;
+    }
+
+    .friend-slide-elements h1 {
+      font-size: 30px;
+    }
+
+.header h1{
+font-size: 50px;
+}
+  }
+
+  .search-again-elements h2 {
+    font-size: 30px;
+  }
+
+  /*---------CAROUSEL-----------*/
+.carousel h2 {
+  font-size: 30px;
+}
+
+.carousel h3 {
+  font-size: 20px;
+}
+
+.carousel p {
+  font-size: 14px;
+}
+
+.button-more {
+  width: 60%;
+  margin-top: 1em;
+}
