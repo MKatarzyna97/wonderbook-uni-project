@@ -10,7 +10,7 @@ class Goals extends Component {
     render() { 
         return ( 
             <div className="goals-section">
-                <h2>Co czego dążymy?</h2>
+                <h2>Do czego dążymy?</h2>
             <div className="goals">
                   
                   <div className="goal">

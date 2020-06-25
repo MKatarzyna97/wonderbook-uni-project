@@ -1016,7 +1016,7 @@ font-family: 'Cardo', serif;
 .about-baner {
   background-image: url("./photos/typewriter.jpg");
   background-size: cover ;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1025,7 +1025,7 @@ font-family: 'Cardo', serif;
 }
 .about-baner-color {
   background-color: #4a4e69;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -1035,7 +1035,7 @@ font-family: 'Cardo', serif;
   
   text-align: center;
   font-family: 'Source Serif Pro', serif;
-  font-size: 70px;
+  font-size: 80px;
   color: white;
   z-index: 2;
 }
@@ -1047,7 +1047,11 @@ font-family: 'Cardo', serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  margin-top: 4em;
+}
+
+.goals-section h2 {
+  font-weight: 400;
 }
 
 .goals {
@@ -1075,12 +1079,31 @@ font-weight: 500;
 text-align: center;
 margin-top: 1em;
 height: 3em;
+font-weight: 300;
 
 
 }
+
 
 .goal img {
   border-radius: 100%;
   width: 200px;
   height: 200px;
+}
+
+/*ABOUT SECTION*/
+
+.about-description {
+  background-image: url("./photos/book-bg.jpg");
+  z-index: -1;
+}
+
+.about-section-bg {
+background-image: url("./photos/book-bg.jpg");
+position: absolute;
+z-index: 1;
+}
+
+.about-description-content {
+  z-index: 2;
 }
