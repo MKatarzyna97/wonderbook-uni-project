@@ -3,7 +3,8 @@ import FriendIntro from './friendIntro'
 import Books from "../books";
 import Song from "./song";
 import Kochanowski from './kochanowski';
-import Header from '../header'
+import Header from '../header';
+import FloatingActionButton from '../homeButton'
 
 
 
@@ -29,6 +30,7 @@ class ThisMonth extends Component {
         return ( <div className="this-month">
           <Header />
 <FriendIntro />
+<FloatingActionButton />
 <Kochanowski />
 <div className='friend-books'>
 <h2>Przyjaźń w literaturze</h2>

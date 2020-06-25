@@ -67,7 +67,7 @@ body {
 }
 nav {
   
-  background-color: #22223b;
+  background-color: #22223b93;
   position: fixed;
   width: 100%;
   height: 8vh;
@@ -275,9 +275,11 @@ color: white
 .search-again-elements h2 {
  
   font-weight: 400;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 50px;
   text-align: center;
+  letter-spacing: 3px;
+  
 }
 
 /* WYNIKI WYSZUKIWANIA */
@@ -387,7 +389,7 @@ footer {
 .secTitle h2 {
   margin-bottom: 0;
   color: #22223b;
-  
+  font-family: 'Source Serif Pro', serif;
 }
 
 .hrLine {
@@ -568,11 +570,23 @@ background-color: #22223b;
   display: block
 }
 
-/*DETAILS*/
+/*DETAILS MODAL*/
 
 .details-title-author {
 color: #4a4e69;
+margin-bottom: 1em;
 }
+
+.details-title-author h2 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 40px;
+}
+
+.details-title-author h4 {
+font-size: 25px;
+font-weight: 400;
+}
+
 .imgButton {
  
   background-color: transparent;
@@ -587,16 +601,18 @@ color: #4a4e69;
   font-weight: 400;
 }
 
-.detail-content {
-display: flex;
+.modal-body {
+  display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 color: #22223b;
 }
 
-.detail-content img {
+
+.modal-body img {
 height: 70vh;
+width: 50%;
 }
 
 .detail-description {
@@ -604,46 +620,73 @@ height: 70vh;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 80%;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  
+  
   text-align: justify;
 
   }
-
+.details-text {
+  
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 2em;
+  margin-right: 2em;
+ 
+}
+ .detail-content {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100%;
+   margin-top: 1em;
+  margin-bottom: 1em;
+ }
   .read-now-button {
     
   border-radius: 50px;
   height: 2.2em;
-  
-  border-color: transparent;
-  background-color: #4a4e69;
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-
-  }
-.read-now-button:focus  {
-  outline: none;
-  background-color: #22223b;
-  }
-  .read-now-button:hover {
-background-color: #22223b;
-color: white;
-  }
-
-  .close-button {
-    border-radius: 50px;
-  height: 2.2em;
-  margin-top: 3em;
-  margin-bottom: 3em;
   border-color: transparent;
   background-color: #9a8c98;
   color: white;
   font-size: 18px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  }
+.read-now-button:focus  {
+  outline: none;
+  background-color: #22223b;
+  }
+  .read-now-button:hover {
+background-color: #4a4e69;
+color: white;
+  }
+.modal-footer {
+  width: 100%;
+  background-image: url("./photos/pages.jpg") ;
+}
+
+.modal-header {
+  background-image: url("./photos/pages.jpg") ;
+}
+  .close-button {
+  border-radius: 50px;
+  border-width: 1px;
+  height: 2.2em;
+  width: 15%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-color: #9a8c98;
+  border-style: solid;
+  background-color: transparent;
+  color: #9a8c98;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  
   }
 .close-button:focus  {
   outline: none;
@@ -651,6 +694,8 @@ color: white;
   }
   .close-button:hover {
     background-color:#4a4e69;
+    border-color: #4a4e69;
+    color: white;
   }
 
   /*FRIEND SECTION */
@@ -739,7 +784,7 @@ margin-right: 3em;
  }
  
  .read-more-friend {
-   width: 100%;
+   width: 11em;
    border-radius: 50px;
    height: 2.2em;
    margin-top: 2em;
@@ -762,7 +807,7 @@ margin-right: 3em;
   }  
  
  .read-more {
-   width: 15em;
+   width: 11em;
    border-radius: 50px;
    height: 2.2em;
    border-color: transparent;
@@ -1038,6 +1083,7 @@ font-family: 'Cardo', serif;
   font-size: 80px;
   color: white;
   z-index: 2;
+  letter-spacing: 3px;
 }
 
 /*GOALS*/
@@ -1052,6 +1098,7 @@ font-family: 'Cardo', serif;
 
 .goals-section h2 {
   font-weight: 400;
+  color: #22223b;
 }
 
 .goals {
@@ -1094,16 +1141,111 @@ font-weight: 300;
 /*ABOUT SECTION*/
 
 .about-description {
-  background-image: url("./photos/book-bg.jpg");
+  background-image: url("./photos/pages.jpg");
+  background-size: cover;
   z-index: -1;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .about-section-bg {
-background-image: url("./photos/book-bg.jpg");
+
 position: absolute;
 z-index: 1;
-}
+height: 80vh; 
+width: 100%;
+opacity: 0.5;
+
+
+} 
 
 .about-description-content {
   z-index: 2;
+  height: 65vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 4em;
+  text-align: justify;
+  
+  color: #f2e9e4;
+  background-color: #9a8c9871;
+  padding: 3em;
+  border-radius: 5%;
+  
+
 }
+
+.about-description-content h2 {
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: start;
+}
+
+.about-description-content button {
+  width: 8em;
+  border-radius: 50px;
+  height: 2.5em;
+  margin-top: 2em;
+ background-color: transparent;
+ border-style: solid;
+ border-width: 1px;
+  border-color: white;
+  color: white;
+  font-size: 20px;
+}
+
+.about-description-content button:hover {
+  background-color: #4a4e69 ;
+  color: white;
+  border-color: #4a4e69;
+}
+
+.about-description-content button:focus {
+  outline:0;
+  background-color: #22223b
+}
+
+/*SZYMBORSKA*/
+
+.quote-about {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 70vh;
+
+}
+
+.quote-content-about {
+  width: 60%;
+}
+
+.quote-content-about h4 {
+width: 100%;
+text-align: end;
+font-weight: 300;
+font-style: italic;
+}
+
+.quote-content-about p {
+font-size: 37px;
+font-family: 'Source Serif Pro', serif;
+text-align: center;
+color: #22223b;
+}
+
+.quote-mark-about {
+font-size: 60px;
+color: #4a4e69;
+}
+
+.homeIcon {
+  text-decoration: none;
+  color: white;
+}
+
