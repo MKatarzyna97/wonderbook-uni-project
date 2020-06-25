@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './media/Media.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,6 +13,7 @@ import ThisMonth from "./components/This-month/thisMonth"
 import Contact from "./components/contact";
 import ScrollToTop from "./components/scroll";
 import About from "./components/about/about";
+import LongMenu from './media/mediaNavbar'
 
 
 
@@ -20,7 +22,9 @@ function App() {
     <Router>
       <ScrollToTop>
     <div className="App">
+    <LongMenu />
       <Navbar />
+      
       <Switch>
       <Route path="/about" component={About} />
       <Route path="/" exact component={Home} />

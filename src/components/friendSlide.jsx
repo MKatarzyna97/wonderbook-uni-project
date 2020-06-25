@@ -14,7 +14,7 @@ class FriendSlide extends Component {
             
             <div className="friend-desciption">
             <p> Co miesiąc wybieramy hasło, które jest motywem przewodnim wybranych dla Ciebie książek.
-            W tym miesiącu tematem przewodnim jest bliska naturze człowieka <b>przyjaźń</b>.  <br/>
+           <br/> W tym miesiącu tematem przewodnim jest bliska naturze człowieka <b>przyjaźń</b>.  <br/>
 
                 Celebruj przyjaźń i zobacz nasze propozycje </p> 
                 

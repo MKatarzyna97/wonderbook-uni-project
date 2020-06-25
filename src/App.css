@@ -11,8 +11,10 @@
 body {
   
   margin: 0;
+ 
   font-family: 'Open Sans', sans-serif;
-  color: #414141
+  color: #414141;
+  
   
 
 }
@@ -60,9 +62,6 @@ body {
   padding: 0;
   margin-bottom: 0;
   z-index: 3;
-  
-  
-  
  
 }
 nav {
@@ -88,7 +87,7 @@ margin-bottom: 0;
 margin-top: 0;
 }
 
-.navbar ul {
+.navbarStyle {
 display: flex;
 flex-direction: row;
 margin-right: 3em;
@@ -100,14 +99,14 @@ justify-content: space-between;
 
 }
 
-.navbar li {
+.navbarStyle li {
   list-style: none;
   padding-left: 2em;
   padding-right: 2em;
   color: white
 }
 
-.navbar a {
+.navbarStyle a {
 text-decoration: none;
 color: white
 }
@@ -153,6 +152,7 @@ color: white
   font-size: 50px;
   margin-bottom: 1em;
   letter-spacing: 3px;
+  text-align: center;
 
    
   
@@ -370,12 +370,7 @@ width: 80%;
   margin-top: 0.7em;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  padding: 3em;
-  margin: 0;
-}
+
 
 .secTitle {
   display: flex;
@@ -401,16 +396,23 @@ footer {
 
 /* FOOTER */
 
+
+
 footer {
   background-color: #22223b;
   color: white;
  position: relative;
  display: flex;
  flex-direction: column;
-height: 40vh;
+height: 30vh;
+padding-right: 3em;
+  padding-left: 3em;
+  padding-top: 1em;
+  margin: 0;
 }
 footer p {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600;
 }
 footer ul {
   display: flex;
@@ -418,13 +420,15 @@ footer ul {
 
 footer li {
   list-style: none;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   
 }
 .footer-contact-info {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
+  
 }
 .footer-contact {
   display: flex;
@@ -448,6 +452,8 @@ footer li {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  font-size: 14px;
+
 }
 
 .social-media-footer ul {
@@ -707,6 +713,8 @@ color: white;
     justify-content: space-between;
     padding-left: 5em;
     margin-top: 5em;
+   
+    
     
   }
 
@@ -838,6 +846,12 @@ margin-right: 3em;
 
  /*INTRO*/
 
+.this-month {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .this-month-intro {
   display: flex;
   flex-direction: row;
@@ -845,6 +859,7 @@ margin-right: 3em;
   align-items: center;
   padding-top: 3em;
   margin-bottom: 3em;
+  
   
 }
 .this-month-intro img {
@@ -1249,3 +1264,8 @@ color: #4a4e69;
   color: white;
 }
 
+/*-----------MEDIA-----------------*/
+
+.media-nav {
+  display: none;
+}
