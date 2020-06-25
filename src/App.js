@@ -7,12 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./components/home";
 import Footer from "./components/footer/footer"
 import Navbar from "./components/navbar";
-import Trial from "./components/trial";
 import Books from "./components/books";
 import ThisMonth from "./components/This-month/thisMonth"
 import Contact from "./components/contact";
 import ScrollToTop from "./components/scroll";
-
+import About from "./components/about/about"
 
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
-      <Route path="/trial" component={Trial} />
+      <Route path="/about" component={About} />
       <Route path="/" exact component={Home} />
       <Route path="/books" component={Books} />
       <Route path="/this-month" component={ThisMonth} />

@@ -3,7 +3,7 @@ import FriendIntro from './friendIntro'
 import Books from "../books";
 import Song from "./song";
 import Kochanowski from './kochanowski';
-
+import Header from '../header'
 
 
 
@@ -27,6 +27,7 @@ class ThisMonth extends Component {
         }
     render() { 
         return ( <div className="this-month">
+          <Header />
 <FriendIntro />
 <Kochanowski />
 <div className='friend-books'>
