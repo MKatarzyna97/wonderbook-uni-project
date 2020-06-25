@@ -5,7 +5,8 @@ import {Link} from 'react-router-dom'
 
 class Friend extends Component {
     state = { 
-      searchArea: 'friend'
+      searchArea: 'friend',
+      
      }
 
      componentDidMount() {

@@ -6,6 +6,9 @@ import SearchAgain from "./searchAgain"
 import Friend from './friend';
 import News from "./news";
 import Header from "./header";
+import Fab from '@material-ui/core/Fab';
+import HomeIcon from '@material-ui/icons/Home';
+import {Link} from 'react-router-dom';
 
 
 
@@ -19,11 +22,14 @@ class Home extends Component {
      }
 
      scrollToTop() {
+         
         window.scrollTo({
           top: 0,
           behavior: "smooth"
         });
+       
       }
+      
 
  // WYSZUKIWARKA - FUNKCJE I FETCHOWANIE
 
@@ -49,6 +55,29 @@ request
     })
 }
 
+change = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    this.setState({
+       
+        afterSearch: false,
+        
+    })
+}
+
+styleBtn = {
+    margin: 0,
+    top: 'auto',
+    right: 20,
+    bottom: 20,
+    left: 'auto',
+    position: 'fixed',
+    color: '#4a4e69',
+    backgroundColor: '#4a4e69'
+};
+
 
 //WYSZUKIWARKA - KONIEC
 
@@ -64,16 +93,20 @@ request
 
 
             {this.state.afterSearch ? null :  <SearchBook searchArea={this.state.searchArea} searchBooks={this.searchBooks} handleSearch={this.handleSearch} />}
-            
-            
+            {this.state.afterSearch ? <Link to="/"> 
+        <Fab aria-label="add" style={this.styleBtn} onClick={this.change} >
+       <HomeIcon className="homeIcon"  />
+        </Fab>
+        </Link> : null }
             {this.state.afterSearch ? <Header searchBooks={this.searchBooks}/> : null }
             {this.state.afterSearch ? search : null }
             
+            
 
           <div className='searchResults'>
-              
+          {this.state.afterSearch ? <Books books={this.state.books} afterSearch={this.state.afterSearch}/> : null }
             
-            <Books books={this.state.books} afterSearch={this.state.afterSearch}/>
+            
             </div>
            
             {this.state.afterSearch ? <SearchAgain searchArea={this.state.searchArea} scrollToTop={this.scrollToTop} searchBooks={this.searchBooks} handleSearch={this.handleSearch} /> : null }

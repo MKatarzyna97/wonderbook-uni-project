@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Szymborska from './szymborska';
 import Goals from './aboutGoals';
-import AboutDescription from "./aboutDescription"
+import AboutDescription from "./aboutDescription";
+import FloatingActionButton from '../homeButton'
 
 class About extends Component {
     state = {  }
@@ -10,6 +11,7 @@ class About extends Component {
             <div className="about">
               <div className="about-baner">  
               <div className="about-baner-color"></div>
+              <FloatingActionButton />
               <h1>O nas</h1> </div>
               <Goals />
               <AboutDescription />

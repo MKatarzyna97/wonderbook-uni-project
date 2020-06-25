@@ -4,6 +4,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
+import FloatingActionButton from './homeButton'; 
 
 
 class Contact extends Component {
@@ -31,6 +32,7 @@ EmailStyle = {
   render() { 
     return ( <div className="contact">
      <img src={Call} alt=""/>
+     <FloatingActionButton />
       <div className="contact-welcome">
         <h1>Jesteśmy tam, gdzie Ty</h1>
         <p>Znajdź nas w sieci, poznajmy się lepiej.</p>

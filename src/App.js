@@ -11,7 +11,8 @@ import Books from "./components/books";
 import ThisMonth from "./components/This-month/thisMonth"
 import Contact from "./components/contact";
 import ScrollToTop from "./components/scroll";
-import About from "./components/about/about"
+import About from "./components/about/about";
+
 
 
 function App() {
