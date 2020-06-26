@@ -8,7 +8,6 @@ import {Link} from 'react-router-dom';
 
 export default function LongMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);

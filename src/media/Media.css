@@ -14,13 +14,28 @@
       }
 
       .button-more {
-        width: 40%;
+        width: 20%;
         margin-top: 1em;
       }
+
+      .about-description {
+        height: 100vh;
+        width: 100%;
+        
+      }
+
+      .about-description-content {
+        position: relative;
+        height: 90vh;
+      
+      }
+
 }
 
   @media only screen and (max-width: 720px) {
     
+
+
     html{
       width: 100vw;
       overflow-x: hidden;
@@ -77,6 +92,24 @@ body nav {
    .carousel h2 {
      font-size: 30px;
    }
+
+
+
+   .song {
+    flex-direction: column;
+    
+  }
+
+  .song-lyrics {
+    width: 80%;
+    align-items: center;
+  }
+
+.video {
+  width: 100%;
+}
+
+
   
   }
 
@@ -175,6 +208,84 @@ opacity: 0.5;
 .third {
   height: 100vh;
 }
+
+
+.about-description-content {
+  width: 80%;
+}
+
+.goal {
+  padding: 1em;
+ 
+}
+
+.goals {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+/*-----THIS MONTH------*/
+.this-month-intro {
+  flex-direction: column;
+  
+}
+
+.this-month-intro-descr {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.this-month-intro-descr p {
+  text-align: justify;
+}
+
+.quote-content {
+  text-align: center;
+}
+
+.quote p {
+  font-size: 30px;
+}
+
+.quote-mark {
+  font-size: 40px;
+ 
+}
+
+.quote {
+  margin-top: 0em;
+  padding-top: 0em;
+  flex-direction: column;
+}
+
+
+.contact-welcome {
+  width: 80%;
+  height: 100vh;
+}
+
+.contact-welcome h1 {
+  font-size: 40px;
+  
+}
+
+.contact-welcome p {
+  font-size: 20px;
+ 
+}
+
+.contact ul {
+  flex-direction: column;
+}
+
+.contact {
+  height: 120vh;
+}
+
+
     }
 
 
@@ -204,7 +315,7 @@ opacity: 0.5;
 .header h1{
 font-size: 50px;
 }
-  }
+  
 
   .search-again-elements h2 {
     font-size: 30px;
@@ -226,4 +337,56 @@ font-size: 50px;
 .button-more {
   width: 60%;
   margin-top: 1em;
+}
+
+.about-description {
+  height: 120vh;
+  justify-content: center;
+  align-items: center;
+}
+.about-description-content {
+  height: 110vh ;
+}
+
+.about-description-content h2 {
+font-size: 25px;
+}
+
+.about-description-content p {
+  font-size: 16px;
+}
+
+
+.quote-about {
+  margin-top: 2em;
+}
+
+
+.contact-welcome {
+  width: 80%;
+  height: 100vh;
+  
+}
+
+.contact-welcome h1 {
+  font-size: 40px;
+  
+}
+
+.contact-welcome p {
+  font-size: 16px;
+ 
+}
+
+.contact ul {
+  flex-direction: column;
+}
+
+.contact {
+  height: 120vh;
+}
+
+body footer {
+  height: 55vh;
+}
 }

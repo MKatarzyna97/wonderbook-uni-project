@@ -881,16 +881,21 @@ margin-right: 5em;
   margin-bottom: 1em;
   display: flex;
   flex-direction: column;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 40px;
 }
 
 .friend-word {
   
-  font-weight: 600;
-  letter-spacing: 5px;
+  font-weight: 400;
+ 
   color: #4a4e69;
   margin-top: 0.3em;
   font-size: 40px;
+ 
+   letter-spacing: 10px;
+  
+   font-family: 'Cardo', serif;
 }
 /*QUOTE*/
 
@@ -1017,13 +1022,16 @@ font-family: 'Cardo', serif;
 .contact {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
- 
+  background-image: url("./photos/woman-reading.jpg");
+  background-size: cover;
+ height: 100vh;
 }
 
 .contact img {
   width: 50%;
+  display: none;
   
 }
 
@@ -1036,25 +1044,31 @@ font-family: 'Cardo', serif;
   margin-left: 3em;
   display: flex;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.521);
+  height: 70vh;
+  border-radius: 10%;
+  padding: 3em;
+  justify-content: center;
   
 }
 
 .contact h1 {
   font-size: 60px;
-  color: #4a4e69;
+  color: #22223b;
   margin-bottom: 0.5em;
+  
   
 }
 
 .contact p {
-  color: #4a4e69;
+  color: #22223b;
   font-size: 25px;
 }
 
-.contact-icons {
- margin-top: 3em;
-}
 
+.contact-icons {
+  margin-top: 2em;
+}
 
 
 .contact ul {
@@ -1071,6 +1085,8 @@ font-family: 'Cardo', serif;
   padding-right: 1em;
 }
 
+
+
 /*-------ABOUT---------------*/
 
 .about-baner {
@@ -1078,10 +1094,19 @@ font-family: 'Cardo', serif;
   background-size: cover ;
   height: 80vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: -1;
  
+}
+
+.hr-about {
+  background-color: white;
+  width: 50%;
+  height: 2px;
+  border-radius: 100%;
+  z-index: 1;
 }
 .about-baner-color {
   background-color: #4a4e69;
@@ -1095,10 +1120,11 @@ font-family: 'Cardo', serif;
   
   text-align: center;
   font-family: 'Source Serif Pro', serif;
-  font-size: 80px;
+  font-size: 90px;
   color: white;
   z-index: 2;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
+  font-weight: 300;
 }
 
 /*GOALS*/
@@ -1119,9 +1145,8 @@ font-family: 'Cardo', serif;
 .goals {
   display: flex;
   flex-direction: row;
-  
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -1130,8 +1155,8 @@ font-family: 'Cardo', serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
   padding: 3em;
+  width: 20em;
  
 }
 
@@ -1142,7 +1167,7 @@ text-align: center;
 margin-top: 1em;
 height: 3em;
 font-weight: 300;
-
+width: 70%;
 
 }
 
@@ -1186,9 +1211,10 @@ opacity: 0.5;
   justify-content: center;
   align-items: flex-end;
   margin-right: 4em;
+  margin-left: 4em;
   text-align: justify;
   
-  color: #f2e9e4;
+  color: white;
   background-color: #9a8c9871;
   padding: 3em;
   border-radius: 5%;

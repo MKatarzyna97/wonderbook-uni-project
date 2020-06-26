@@ -12,7 +12,8 @@ class About extends Component {
               <div className="about-baner">  
               <div className="about-baner-color"></div>
               <FloatingActionButton />
-              <h1>O nas</h1> </div>
+              <h1>Dzień dobry!</h1>
+              <hr className="hr-about"></hr>         </div>
               <Goals />
               <AboutDescription />
              <Szymborska />
