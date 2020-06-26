@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 React Bootstrap and UI Material were used.
 
-#WonderBook - Google Books - searching website.
+# WonderBook - Google Books - searching website.
 
-#Main purpose
+## Main purpose
 
 This site was created for university project use. The main page serves for searching purposes and is divided into two parts: state before search and state after search (more content displayed). After entering a phrase user gets access to search results and other components that imitate blog site.
 The site consists of four main locations: main page, "this month" page, "about" page and "contact" page.
