@@ -39,10 +39,10 @@ EmailStyle = {
         <div className='contact-icons'>
           <ul> 
       
-        <li> <a href="/" target="_blank" rel="noopener noreferrer">  <FacebookIcon style={this.FBstyle}/> </a>   </li>
-  <li>   <a href="/" target="_blank" rel="noopener noreferrer">  <InstagramIcon style={this.Instastyle} /> </a> </li>
-   <li> <a href="/" target="_blank" rel="noopener noreferrer">  <TwitterIcon style={this.Twitastyle} /> </a> </li> 
-   <li>  <a href="/" target="_blank" rel="noopener noreferrer">  <EmailIcon style={this.EmailStyle} /> </a> </li>
+        <li> <a href="/" target="_blank" rel="noopener noreferrer">  <FacebookIcon className="contact-icon" style={this.FBstyle}/> </a>   </li>
+  <li>   <a href="/" target="_blank" rel="noopener noreferrer">  <InstagramIcon className="contact-icon" style={this.Instastyle} /> </a> </li>
+   <li> <a href="/" target="_blank" rel="noopener noreferrer">  <TwitterIcon className="contact-icon" style={this.Twitastyle} /> </a> </li> 
+   <li>  <a href="/" target="_blank" rel="noopener noreferrer">  <EmailIcon className="contact-icon" style={this.EmailStyle} /> </a> </li>
      </ul>
      </div>
       </div>
