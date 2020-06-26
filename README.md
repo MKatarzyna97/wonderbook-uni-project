@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 React Bootstrap and UI Material were used.
 
-# WonderBook - Google Books - searching website.
+# WonderBook - Google Books searching website
 
 ## Main purpose
 
